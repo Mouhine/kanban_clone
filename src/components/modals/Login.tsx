@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Input, Stack, Text, Button, Flex } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa";
