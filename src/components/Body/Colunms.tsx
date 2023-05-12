@@ -46,7 +46,9 @@ function Colunms() {
   useEffect(() => {
     const GetTabels = async () => {
       try {
-        const data = await fetch(`http://localhost:5000/api/table/${boardId}`);
+        const data = await fetch(
+          `https://kanban-clone-sand.vercel.app/${boardId}`
+        );
         const result = await data.json();
         setTabels(result);
       } catch (error) {}
