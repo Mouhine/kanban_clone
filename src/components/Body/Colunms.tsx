@@ -47,7 +47,7 @@ function Colunms() {
     const GetTabels = async () => {
       try {
         const data = await fetch(
-          `https://kanban-clone-sand.vercel.app/table/${boardId}`
+          `https://kanban-clone-sand.vercel.app/api/table/${boardId}`
         );
         const result = await data.json();
         setTabels(result);
