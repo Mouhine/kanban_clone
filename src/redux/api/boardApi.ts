@@ -4,7 +4,7 @@ import { Board } from "@/types/Board";
 export const boardApi = createApi({
   reducerPath: "boardApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.NEXT_PUBLIC_API_URL}/boards`,
+    baseUrl: `${process.env.NEXT_PUBLIC_API_URL}boards`,
   }),
   tagTypes: ["Boards"],
   endpoints: (builder) => ({
