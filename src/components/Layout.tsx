@@ -18,9 +18,12 @@ const Layout = ({ children }: Props) => {
 
   async function name() {
     try {
-      const res = await fetch("http://localhost:5000/api/auth/refresh", {
-        method: "POST",
-      });
+      const res = await fetch(
+        "https://kanban-clone.onrender.com/api/auth/refresh",
+        {
+          method: "POST",
+        }
+      );
       const data = await res.json();
       dispatch(setAuth(data));
       console.log(accessToken);
