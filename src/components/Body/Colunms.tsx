@@ -125,7 +125,6 @@ function Colunms() {
               py="1rem"
               px="3rem"
               borderRadius="10px"
-              border="1px dotted white"
               cursor="pointer"
             >
               <Text color="whitesmoke">Add Tabel</Text>

@@ -19,10 +19,9 @@ function Colunm({ id, title, tasks, accentColor }: Props) {
       flexDir="column"
       gap="0.8rem"
       alignItems="start"
-      border="1px solid #917FB3"
       borderRadius="10px"
-      boxShadow=" #2c2c38 0px 3px 10px 0px"
       p="0.5rem"
+      bg="main-color-bg"
     >
       <Flex
         alignItems="center"

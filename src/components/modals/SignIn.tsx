@@ -105,6 +105,7 @@ const SignIn = (props: Props) => {
         color="creame-white"
         fontWeight={300}
         fontSize="10pt"
+        borderRadius="100vw"
         onClick={createAccount}
         isLoading={result.isLoading}
       >

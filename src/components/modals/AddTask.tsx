@@ -145,6 +145,7 @@ function AddTask({}: Props) {
           fontWeight={300}
           fontSize="10pt"
           onClick={handelAddSubTask}
+          borderRadius="100vw"
         >
           Add sub Task
         </Button>
@@ -169,6 +170,7 @@ function AddTask({}: Props) {
         color="creame-white"
         fontWeight={300}
         fontSize="10pt"
+        borderRadius="100vw"
         onClick={() => {
           if (!taskInfo.tabelId) {
             dispatch(setView("error"));
@@ -200,11 +202,20 @@ const SubTask = ({
 }) => {
   return (
     <Flex alignItems="center">
-      <Box p="0.5rem" border="0.3px solid gray" w="full" rounded={6} mr="1rem">
+      <Box
+        p="0.5rem"
+        border="0.3px solid gray"
+        w="full"
+        rounded={6}
+        mr="0.3rem"
+      >
         {" "}
         {subTask.title}
       </Box>
-      <Button onClick={() => handleDeleteSubTask(subTask.title!)}>
+      <Button
+        bg="transparent"
+        onClick={() => handleDeleteSubTask(subTask.title!)}
+      >
         <Icon as={GrFormClose} color="white" />
       </Button>
     </Flex>

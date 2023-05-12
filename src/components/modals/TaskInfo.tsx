@@ -91,6 +91,7 @@ function TaskInfo({}: Props) {
         color="creame-white"
         fontWeight={300}
         fontSize="10pt"
+        borderRadius="100vw"
         onClick={() => {
           deleteTask(Task!);
           dispatch(toggleOpen());

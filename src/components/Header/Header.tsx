@@ -37,8 +37,8 @@ const Header = (props: Props) => {
       bg="main-color-bg"
       px="2rem"
       py="1rem"
-      border="1px solid #8a8c9b"
-      h="8vh"
+      h="10vh"
+      w="80vw"
     >
       <Flex alignItems="center" justifyContent="space-between" flexGrow={1}>
         <Text fontSize="lg" fontWeight={400} color="creame-white">
@@ -46,7 +46,11 @@ const Header = (props: Props) => {
         </Text>
         <Flex alignItems="center" gap="0.6rem" pr="1rem">
           {accessToken && (
-            <Button bg="accent-color" onClick={handleOpenModal}>
+            <Button
+              bg="accent-color"
+              onClick={handleOpenModal}
+              borderRadius="100vw"
+            >
               <Flex alignItems="center">
                 <Icon as={TbPlus} color="creame-white" />
                 <Text fontWeight={300} color="creame-white" fontSize="12px">

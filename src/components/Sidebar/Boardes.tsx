@@ -19,12 +19,12 @@ export default function Boardes({}: Props) {
     dispatch(setTitle("Add Board "));
   };
   return (
-    <Flex w="100%">
+    <Flex w="20vw">
       <Flex flexDir="column" gap="0.3rem" letterSpacing="1.5px" flexGrow={1}>
         <Text pl="1rem" color="gray.200" fontSize="12px">
           ALL BOARDS ({data?.length})
         </Text>
-        <Flex flexDir="column" gap="0.5rem" py="0.3rem">
+        <Flex flexDir="column" gap="0.5rem" py="0.3rem" w="90%">
           {data?.map((board, i) => {
             return <Board key={i} board={board} />;
           })}

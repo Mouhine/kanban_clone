@@ -88,6 +88,7 @@ const Login = (props: Props) => {
         color="creame-white"
         fontWeight={300}
         fontSize="10pt"
+        borderRadius="100vw"
         onClick={handleLogin}
         isLoading={data.isLoading}
       >

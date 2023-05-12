@@ -31,7 +31,8 @@ function Board({ board }: Props) {
       alignItems="center "
       justify="space-between"
       bg={title === board.title ? "accent-color" : ""}
-      px="0.3rem"
+      pr="2rem"
+      borderRightRadius="100vw"
     >
       <Flex
         alignItems="center"

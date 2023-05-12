@@ -70,6 +70,7 @@ function AddBoard({}: Props) {
         bg="accent-color"
         color="creame-white"
         fontWeight={300}
+        borderRadius="100vw"
         fontSize="10pt"
         onClick={() => {
           if (!id) {

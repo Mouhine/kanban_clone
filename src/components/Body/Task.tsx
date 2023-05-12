@@ -23,7 +23,7 @@ const Task = ({ task, index }: Props) => {
     <Draggable draggableId={task.id!} index={index}>
       {(draggableProvider, draggableSnapshot) => (
         <Flex
-          bg="main-color-bg"
+          bg="main-dark-bg"
           p="3"
           borderRadius={6}
           onClick={handleShowTask}
