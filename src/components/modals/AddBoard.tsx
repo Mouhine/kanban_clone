@@ -81,7 +81,7 @@ function AddBoard({}: Props) {
         }}
         isLoading={result.isLoading}
       >
-        create Tasks
+        create board
       </Button>
     </Stack>
   );
