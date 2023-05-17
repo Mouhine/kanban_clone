@@ -28,7 +28,7 @@ const SignIn = (props: Props) => {
       await register(userInfo);
       setAuth(result.data!);
       dispatch(toggleOpen());
-      router.replace("/");
+      router.replace("/Product");
     } catch (error) {
       console.log("hello world");
     }
